@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación en Ingeniería</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .tema {
+            margin-bottom: 15px;
+        }
+        .subtemas {
+            display: none;
+            margin-left: 20px;
+        }
+        .tema h2 {
+            cursor: pointer;
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function toggleSubtemas(id) {
+            var elemento = document.getElementById(id);
+            if (elemento.style.display === "none") {
+                elemento.style.display = "block";
+            } else {
+                elemento.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Simulación en Ingeniería</h1>
+    
+    <div class="tema">
+        <h2 onclick="toggleSubtemas('tema1')">1. Introducción a la simulación</h2>
+        <div class="subtemas" id="tema1">
+            <ul>
+                <li>Definición e importancia de la simulación en la Ingeniería.</li>
+                <li>Conceptos básicos de la simulación.</li>
+                <li>Metodología de la simulación.</li>
+                <li>Estructura y etapas de un estudio de simulación.</li>
+                <li>Etapas de un proyecto de simulación.</li>
+                <li>Elementos básicos de un simulador de eventos discretos.</li>
+                <li>Ventajas y desventajas de la simulación.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="tema">
+        <h2 onclick="toggleSubtemas('tema2')">2. Números pseudoaleatorios</h2>
+        <div class="subtemas" id="tema2">
+            <ul>
+                <li>Métodos de generación de números pseudoaleatorios.</li>
+                <li>Pruebas estadísticas:
+                    <ul>
+                        <li>De uniformidad.</li>
+                        <li>De aleatoriedad.</li>
+                        <li>De independencia.</li>
+                    </ul>
+                </li>
+                <li>Método de Monte Carlo:
+                    <ul>
+                        <li>Características.</li>
+                        <li>Aplicaciones.</li>
+                        <li>Solución de problemas.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="tema">
+        <h2 onclick="toggleSubtemas('tema3')">3. Generación de variables aleatorias</h2>
+        <div class="subtemas" id="tema3">
+            <ul>
+                <li>Conceptos básicos.</li>
+                <li>Variables aleatorias discretas.</li>
+                <li>Variables aleatorias continuas.</li>
+                <li>Métodos para generar variables aleatorias:
+                    <ul>
+                        <li>Método de la transformada inversa.</li>
+                        <li>Método de convolución.</li>
+                        <li>Método de composición.</li>
+                    </ul>
+                </li>
+                <li>Procedimientos especiales.</li>
+                <li>Pruebas estadísticas.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="tema">
+        <h2 onclick="toggleSubtemas('tema4')">4. Lenguajes de simulación</h2>
+        <div class="subtemas" id="tema4">
+            <ul>
+                <li>Lenguaje de simulación y simuladores.</li>
+                <li>Aprendizaje y uso de un lenguaje de simulación o un simulador.</li>
+                <li>Casos prácticos de simulación:
+                    <ul>
+                        <li>Problemas con líneas de espera.</li>
+                        <li>Problemas con sistemas de inventarios.</li>
+                    </ul>
+                </li>
+                <li>Validación de un simulador:
+                    <ul>
+                        <li>Pruebas paramétricas.</li>
+                        <li>Pruebas no paramétricas.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="tema">
+        <h2 onclick="toggleSubtemas('tema5')">5. Proyecto Integrador</h2>
+        <div class="subtemas" id="tema5">
+            <ul>
+                <li>Análisis, modelado y simulación de un sistema o subsistema de servicios o productivo de una empresa para detectar las mejoras posibles a realizar.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
